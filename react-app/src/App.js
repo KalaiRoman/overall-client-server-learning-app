@@ -1,6 +1,11 @@
-import './App.scss';
+import "./App.scss";
+import Routers from "./router/Routers";
 function App() {
-  return <div>kalai</div>;
+  return (
+    <>
+      <Routers />
+    </>
+  );
 }
 
 export default App;

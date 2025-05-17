@@ -1,7 +1,7 @@
-import ThemeContext from "../contextapi/ThemeContext";
+import ThemeProvider from "../contextapi/ThemeProvider";
 
 function ContextProvider({ children }) {
-  return <ThemeContext>{children}</ThemeContext>;
+  return <ThemeProvider>{children}</ThemeProvider>;
 }
 
 export default ContextProvider;

@@ -1,7 +1,10 @@
+import BrowserRouters from "../middleware/BrowserRouters";
 import ContextProvider from "../middleware/ContextProvider";
-
 function AllMiddleware({ children }) {
-  return <ContextProvider>{children}</ContextProvider>;
+  return (
+    <BrowserRouters>
+      <ContextProvider>{children}</ContextProvider>
+    </BrowserRouters>
+  );
 }
-
 export default AllMiddleware;
