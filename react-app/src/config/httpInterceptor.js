@@ -6,7 +6,6 @@ const axiosInstance = axios.create({
   withCredentials: true,
 });
 
-console.log(envText,'envText.baseUrl')
 axiosInstance.interceptors.request.use((config) => {
   const token = getToken();
   if (token) {

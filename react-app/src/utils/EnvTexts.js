@@ -1,6 +1,4 @@
 const envText = {
-  baseUrl: "https://jsonplaceholder.typicode.com",
+  baseUrl: process.env.REACT_APP_BASE_URL,
 };
-
-console.log(envText,'process.env.REACT_APP_BASE_URL')
-export {envText};
+export { envText };

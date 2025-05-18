@@ -1,19 +1,13 @@
-import { getUserData } from '../../services/user_services'
+import { getUserData } from "../../services/user_services";
 
 function Login() {
-
-
-  const {loading,data,error,refetch}=getUserData();
-
-  console.log(data,"data")
+  const { loading, data, error, refecth } = getUserData();
   return (
     <div>
-
-{data?.length}
-{process.env.REACT_APP_BASE_URL}
       Login
+      <button onClick={refecth}>Refresh</button>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;
