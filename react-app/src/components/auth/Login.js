@@ -4,7 +4,6 @@ import { useContext } from "react";
 import ThemeContext from "../../contextapi/ThemeContext";
 function Login(props) {
   const { name, age } = useContext(ThemeContext);
-
   const { loading, data, error, refecth } = getUserData();
   return (
     <div>
