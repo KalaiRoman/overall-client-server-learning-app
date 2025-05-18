@@ -1,13 +1,17 @@
 import { getUserData } from "../../services/user_services";
+import HigherOrderComponent from "../../hoc/HigherOrderComponent";
+import { useContext } from "react";
+import ThemeContext from "../../contextapi/ThemeContext";
+function Login(props) {
+  const { name, age } = useContext(ThemeContext);
 
-function Login() {
   const { loading, data, error, refecth } = getUserData();
   return (
     <div>
-      Login
+      Login{name} {age}
       <button onClick={refecth}>Refresh</button>
     </div>
   );
 }
 
-export default Login;
+export default HigherOrderComponent(Login);

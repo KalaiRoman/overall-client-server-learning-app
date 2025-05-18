@@ -3,7 +3,7 @@ import ContextProvider from "../middleware/ContextProvider";
 function AllMiddleware({ children }) {
   return (
     <BrowserRouters>
-      <ContextProvider>{children}</ContextProvider>
+        <ContextProvider>{children}</ContextProvider>
     </BrowserRouters>
   );
 }
