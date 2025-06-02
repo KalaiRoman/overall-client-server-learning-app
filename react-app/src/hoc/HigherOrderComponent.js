@@ -3,7 +3,26 @@ function HigherOrderComponent(WrappedComponent) {
   return function ChildComponent(props) {
     const navigate = useNavigate;
     const userName = "kalaisurya";
+
+    function buttonSections(params) {
+      return (
+        <>
+          <button style={{ background: "red",width:"100%" }}>{params}</button>
+        </>
+      );
+    }
+    function capitalLetterChange(paramsName) {
+      return paramsName.toUpperCase();
+    }
+    function lowerLetterChange(paramsName) {
+      return paramsName.toLowerCase();
+    }
     const params = {
+      functionNames: {
+        capitalLetterChange: capitalLetterChange,
+        lowerLetterChange: lowerLetterChange,
+      },
+      buttons: buttonSections,
       userName,
       navigate,
       ...props,
