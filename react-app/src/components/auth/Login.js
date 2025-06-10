@@ -57,7 +57,6 @@ const Login = (props) => {
   return (
     <Container className="d-flex justify-content-center align-items-center min-vh-100">
 
-    
       <Row className="w-100">
         <Col md={{ span: 6, offset: 3 }}>
           <Card className="shadow p-4 rounded-4">
