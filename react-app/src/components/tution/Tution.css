@@ -1,0 +1,15 @@
+.hero-image {
+    width: 100%;
+    position: relative;
+
+
+
+}
+
+.student-img {
+
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}

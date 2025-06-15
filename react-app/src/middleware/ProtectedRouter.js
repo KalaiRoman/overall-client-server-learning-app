@@ -1,5 +1,5 @@
 function ProtectedRouter() {
-  return <div></div>
+  return <div></div>;
 }
 
 export default ProtectedRouter;

@@ -7,7 +7,7 @@ function HigherOrderComponent(WrappedComponent) {
     function buttonSections(params) {
       return (
         <>
-          <button style={{ background: "red",width:"100%" }}>{params}</button>
+          <button style={{ background: "red", width: "100%" }}>{params}</button>
         </>
       );
     }
